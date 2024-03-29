@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+</head>
+<body>
+    <h1 style="text-align: center;">Formulário de Cadastro</h1>
+    <hr>
+    <a href="index.html" style="font-size: 120%;">Voltar para o Inicio</a>
+    <hr>
+    <form action="https://formsubmit.co/prof.carlos.costa@acad.ifma.edu.br" method="POST">
+        <label for="name"><b>Digite seu nome completo:</b></label><br>
+        <input type="text" name="Nome" id="name" 
+        placeholder="Digite seu nome aqui" required>
+
+        <br><br>
+        <label for="email"><b>Digite seu email pessoal ou academico:</b></label><br>
+        <input type="email" name="Email" id="email"
+        placeholder="Digite o seu email aqui" required>
+
+        <br><br>
+        <label for="senha"><b>Digite sua senha:</b></label><br>
+        <input type="password" name="senha" id="senha"
+        placeholder="Digite sua senha aqui" required>
+
+        <br><br>
+        <h4>Marque sua Profissão:</h4>
+        <input type="radio" id="Profissão" name="Profissão">
+        <label for="Profissão">Professor</label>
+        <br>
+        <input type="radio" id="Profissão" name="Profissão">
+        <label for="Aluno">Aluno</label>
+        <br>
+        <input type="radio" id="Profissão" name="Profissão">
+        <label for="outros">outros</label>
+
+        <br><br>
+        <h4>Oque você gosta</h4>
+        <input type="checkbox" id="Internet" name="Gostos" 
+        value="Animes e Mangás">
+        <label for="Gostos">Animes e Mangás</label>
+        <input type="checkbox" id="bdlarga" name="Gostos" 
+        value="Jogos">
+        <label for="Gostos">Jogos</label>
+        <input type="checkbox" id="other" name="Gostos" 
+        value="outros">
+        <label for="Gostos">outros</label>
+
+        <br><br>
+        <h4>Estado onde você mora:</h4>
+        <select name="Estado onde você mora:" id="local">
+            <option selected disabled value="">Sua localização</option>
+            <option value="Maranhao">Maranhao</option>
+            <option value="Pará">Pará</option>
+            <option value="Piauí">Piauí</option>
+            <option value="Tocantis">Tocantis</option>
+        </select>
+
+        <br><br>
+
+        <textarea name="comentario" id="coment" cols="30" rows="10"placeholder="Digite aqui sua mensagem!"
+        ></textarea>
+
+        <br><br>
+        <button type="submit">Enviar formulario</button>
+        <input type="hidden" name="_subject" value="Novo Contato">
+        <input type="hidden" name="_captcha" value="false">
+   </form>
+</body>
+</html>
